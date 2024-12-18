@@ -12,7 +12,6 @@ import Work from "@/Components/Portfolio/Work";
 import Portfolios from "@/Data/Portfolio/Portfolio.data";
 
 //Background
-import Particle from "@/Assets/portfolio/particle.png";
 
 //Styles
 import styles from "@/Styles/Portfolio/Portfolio.styles";
@@ -114,7 +113,7 @@ const Portfolio = () => {
                     </Box>
                 </TabPanel>
             </TabContext>
-            <Box component="img" src={Particle} alt="particle" sx={styles.Particle} />
+            <Box component="img" src={'/avatars/portfolio/particle.png'} alt="particle" sx={styles.Particle} />
         </Container >
     );
 };

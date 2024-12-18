@@ -8,7 +8,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { MapIcon, EmailIcon, PhoneIcon, FacebookIcon, TwitterIcon, BehaceIcon } from "@/Utilis/Icons";
 
 //Logo
-import Logo from "@/Assets/header/logo.png";
+// import Logo from "@/Assets/header/logo.png";
 
 //Data
 import Navs from "@/Data/Header/Navs.data";
@@ -21,7 +21,7 @@ const Drawers = ({ toggleDrawer }) => {
         <Box>
             <Stack direction="row" sx={{ alignItems: "center" }}>
                 <Box sx={{ flex: 1, mt: "5px" }}>
-                    <Image src={Logo} width={200} height={30} alt="Logo" />
+                    <Image src={'/avatars/header/logo.png'} width={200} height={30} alt="Logo" />
                 </Box>
                 <ButtonBase onClick={toggleDrawer(false)} sx={styles.CrossButton}>
                     <CloseRoundedIcon />

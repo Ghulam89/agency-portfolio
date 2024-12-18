@@ -1,9 +1,3 @@
-//Images
-import Work1 from "@/Assets/portfolio/work1.png";
-import Work2 from "@/Assets/portfolio/work2.png";
-import Work3 from "@/Assets/portfolio/work3.png";
-import Work4 from "@/Assets/portfolio/work4.png";
-import Work5 from "@/Assets/portfolio/work5.png";
 
 const  PortfolioData =  [
     {

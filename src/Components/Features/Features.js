@@ -1,7 +1,6 @@
 // components/FeaturesSection.js
 import { Grid, Typography, Box } from '@mui/material';
 import { Code, AccessTime, VerifiedUser, BuildCircle } from '@mui/icons-material';
-import feature from '../../Assets/company/feature.jpg';
 export default function Features() {
   return (
     <Box sx={{ bgcolor: '#3d3d3d', color: 'white', p: 4 }}>

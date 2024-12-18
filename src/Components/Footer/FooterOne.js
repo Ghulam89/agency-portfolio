@@ -7,7 +7,7 @@ import { MapIcon, EmailIcon, PhoneIcon, FacebookIcon, TwitterIcon, BehaceIcon } 
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 //Logo
-import Logo from "@/Assets/header/logo.png";
+// import Logo from "@/Assets/header/logo.png";
 
 //Styles
 import styles from "@/Styles/Footer/FooterOne.styles";
@@ -16,7 +16,7 @@ const FooterOne = () => {
     return (
         <Box>
             <Box sx={{ mb: "30px" }}>
-                <Image src={Logo} width={287} height={100} alt="Logo" />
+                <Image src={'/avatars/header/logo.png'} width={287} height={100} alt="Logo" />
             </Box>
             <Stack direction="row" sx={styles.Address}>
                 <Box>

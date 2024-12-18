@@ -1,11 +1,4 @@
 
-import service4 from "@/Assets/about/service4.jpg";
-import service5 from "@/Assets/about/service5.jpg";
-import service6 from "@/Assets/about/service6.jpg";
-import service7 from "@/Assets/about/service7.jpg";
-import service8 from "@/Assets/about/service8.jpg";
-import service9 from "@/Assets/about/service9.jpg";
-
 const solutionData = [
     {
         title: "Web Development",

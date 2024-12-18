@@ -1,8 +1,5 @@
 import { Box } from "@mui/material";
 import Image from "next/image";
-
-//Logos
-import Logos from "@/Assets/header/logo.png";
 import Link from "next/link";
 
 const Logo = () => {
@@ -14,7 +11,7 @@ const Logo = () => {
                 // smooth={true}
                 // duration={500}
             >
-                <Image src={Logos} width={200} height={80} alt="Logo" />
+                <Image src={'/avatars/header/logo.png'} width={200} height={80} alt="Logo" />
             </Link>
         </Box>
     );

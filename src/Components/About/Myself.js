@@ -1,5 +1,5 @@
 import { Box,Typography, Grid } from "@mui/material";
-import AboutImage from "@/Assets/header/logo.png";
+// import AboutImage from "@/Assets/header/logo.png";
 //Styles
 import styles from "@/Styles/About/Myselft.styles";
 import Image from "next/image";
@@ -10,7 +10,7 @@ const Myself = () => {
            <Box sx={styles.Container}>
   <Grid container spacing={4} alignItems="center">
     <Grid item xs={12} md={3}>
-      <Image src={AboutImage} alt="About" width={300} height={140} />
+      <Image src={'/avatars/header/logo.png'} alt="About" width={300} height={140} />
     </Grid>
 
     <Grid item xs={12} md={8}>
