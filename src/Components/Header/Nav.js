@@ -7,7 +7,16 @@ import Link from "next/link";
 
 const Nav = () => {
     return (
-        <Box sx={styles.Navs}>
+        <Box   sx={{
+            ...styles.Navs,
+            display: {
+                xs: " none",
+                sm: "none",
+                md: "none",
+                lg: "block",
+                xl: "block", 
+            },
+        }}> 
             {Navs &&
                 Navs.map((nav, i) => (
                     nav.href ? (

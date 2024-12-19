@@ -26,7 +26,7 @@ const styles = {
     Social: {
         mt: "25px",
         a: {
-            color: "primary.social_color",
+            color: "red",
             textDecoration: "none",
             button: {
                 backgroundColor: "primary.social_bg",
@@ -39,7 +39,7 @@ const styles = {
                     transition: "0.3s",
                 },
                 "&:hover": {
-                    backgroundColor: "primary.main",
+                    backgroundColor: "red",
                     svg: {
                         color: "background.default",
                         transform: "rotate(360deg)"

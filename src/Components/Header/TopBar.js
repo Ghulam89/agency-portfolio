@@ -8,41 +8,52 @@ import { FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import Link from 'next/link';
 const TopBar = () => {
   return (
-    <Container maxWidth={false} sx={{ paddingTop:1}}>
-      <Grid container spacing={2}>
-        <Grid item xs={12}  sm={6}>
+    <>
+    <Container maxWidth={false}>
+      <Box display={'flex'}  alignItems={'center'} justifyContent={'space-between'} flexWrap={'wrap'} container spacing={2} >
+        <Box   sx={{
+            ...styles.Navs,
+            display: {
+                xs: " none",
+                sm: "none",
+                md: "none",
+                lg: "block",
+                xl: "block", 
+            },
+        }}>
           <Box sx={{
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
             borderRadius: 1
           }}>
-            <List sx={{ display: 'flex', padding:0}}>
+            <List sx={{ display: 'flex',alignItems:'center'}} > 
               <ListItem sx={{ display: 'flex', alignItems: 'center', marginRight: 2, flexBasis: 'auto' }}>
-                <HiOutlineMail size={24} style={{ marginRight: 8 }} />
+                <HiOutlineMail color='red' size={24} style={{ marginRight: 8 }} />
                 <Typography variant="body2" color="textSecondary">info@company.com</Typography>
               </ListItem>
               <ListItem sx={{ display: 'flex', alignItems: 'center', marginRight: 2, flexBasis: 'auto' }}>
-                <IoCall size={24} style={{ marginRight: 8 }} />
+                <IoCall   color='red'  size={24} style={{ marginRight: 8 }} />
                 <Typography variant="body2" color="textSecondary">+92 514 592013</Typography>
               </ListItem>
               <ListItem sx={{ display: 'flex', alignItems: 'center', marginRight: 2, flexBasis: 'auto' }}>
-                <TbDeviceLandlinePhone size={24} style={{ marginRight: 8 }} />
+                <TbDeviceLandlinePhone  color='red'  size={24} style={{ marginRight: 8 }} />
                 <Typography variant="body2" color="textSecondary">+92 514 592013</Typography>
               </ListItem>
             </List>
           </Box>
-        </Grid>
+        </Box>
 
-        <Grid item xs={12} sm={6}>
-          <Box sx={{
-            display: 'flex',
-            justifyContent:'end',
-            alignItems: 'center',
-            // padding: '10px 0',
-            borderRadius: 1
-          }}>
-            <List sx={{ display: 'flex',alignItems:'center',gap:'15px'}}>
+        <Box>
+          <Box  sx={{
+            display: "flex",
+            justifyContent: "space-between", 
+            alignItems: "center",
+            gap: 3, 
+            borderRadius: 1,
+            width:'100%'
+        }}>
+            <List sx={{ display: 'flex',alignItems:'center',gap:'15px',justifyContent:'center'}}>
              
               <IoLogoFacebook size={20} />
              
@@ -56,7 +67,12 @@ const TopBar = () => {
               <FaWhatsapp size={20}  />
 
          
-             <Link
+           
+       
+              
+            </List>
+            
+            <Link
                 href="#"
                 spy={true}
                 smooth={true}
@@ -67,14 +83,13 @@ const TopBar = () => {
                   
                 </ButtonBase>
             </Link>
-           
-       
-              
-            </List>
           </Box>
-        </Grid>
-      </Grid>
+        </Box>
+      </Box>
     </Container>
+   {/* <div className='' style={{borderBottom:'.5px solid gray',borderColor:'red'}}></div> */}
+    </>
+    
   );
 };
 

@@ -47,7 +47,7 @@ const FooterThree = () => {
             </Typography>
             <Box component="form" onSubmit={handleSubmit(onSubmit)}>
                 <InputBase
-                    placeholder="Write Email"
+                    placeholder="nextwavetech@gmail.com"
                     sx={styles.InputField}
                     {...register(
                         'email',
@@ -70,7 +70,7 @@ const FooterThree = () => {
                     type="submit"
                     sx={{
                         ...styles.SubmitButton,
-                        backgroundColor: `${success ? "primary.success" : "primary.main"}`
+                        backgroundColor: `${success ? "primary.success" : "red"}`
                     }}
                 >
                     {!loading && !message &&

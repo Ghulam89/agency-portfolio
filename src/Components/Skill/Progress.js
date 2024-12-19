@@ -24,6 +24,7 @@ const Progress = () => {
                             variant="determinate"
                             value={progress.progress}
                             sx={{ height: "5px" }}
+                            
                         />
                     </Box>
                 ))

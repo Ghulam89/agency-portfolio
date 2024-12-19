@@ -39,7 +39,7 @@ const Form = () => {
             });
     }
     return (
-        <Box sx={{ mt: "3em" }} component="form" onSubmit={handleSubmit(onSubmit)}>
+        <Box sx={{ mt: "3em" }}   container component="form" onSubmit={handleSubmit(onSubmit)}>
             <Grid container spacing={{ md: 2, sm: 3, xxs: 2 }}>
                 <Grid item md={6} lsm={6} xxs={12}>
                     <InputBase

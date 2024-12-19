@@ -22,22 +22,25 @@ const Bar = () => {
     };
     return (
         <Stack direction="row" sx={{ justifyContent: "right" }}>
-            <Link
-                href="portfolio"
-                // spy={true}
-                // smooth={true}
-                // duration={500}
-            >
-                {/* <ButtonBase sx={styles.SeeProjectBtn}>
-                    See Projects
-                    <ArrowForwardTwoToneIcon />
-                </ButtonBase> */}
-            </Link>
-            <ButtonBase sx={styles.ToogleButton} onClick={toggleDrawer(true)} className={drawer ? "active" : ""}>
-                <Box className="ripple1"></Box>
-                <Box className="ripple2"></Box>
-                <Box className="ripple3"></Box>
-            </ButtonBase>
+        
+            <ButtonBase
+    sx={{
+        ...styles.ToogleButton,
+        display: {
+            xs: "block",
+            sm: "block",
+            md: "block",
+            lg: "none",
+            xl: "none", 
+        },
+    }}
+    onClick={toggleDrawer(true)}
+    className={drawer ? "active" : ""}
+>
+    <Box className="ripple1"></Box>
+    <Box className="ripple2"></Box>
+    <Box className="ripple3"></Box>
+</ButtonBase>
             <Drawer
                 anchor="right"
                 open={drawer}

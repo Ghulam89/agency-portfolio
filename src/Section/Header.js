@@ -36,9 +36,9 @@ const Header = () => {
                 </Grid>
             </Container>
         </Box> */}
-         <Box      component="header">
-            <Container maxWidth={false} disableGutters>
-                <Grid container spacing={2} sx={{ alignItems: "center" }}>
+         <Box   >
+            <Container maxWidth={false}>
+                <Box container spacing={2} sx={{ alignItems: "center",display:'flex',justifyContent:'space-between'}}>
                     <Grid item md={3} xxs={6} >
                         <Logo />
                     </Grid>
@@ -48,7 +48,7 @@ const Header = () => {
                     <Grid item md={3} xxs={6}>
                         <Bar />
                     </Grid>
-                </Grid>
+                </Box>
             </Container>
         </Box>
         </>

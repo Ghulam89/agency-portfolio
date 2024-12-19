@@ -22,8 +22,8 @@ const styles = {
             xs: "0 0 90%",
             xxs: "0 0 100%"
         },
-        backgroundColor: "background.default",
-        boxShadow: theme => `3px 4px 3px ${theme.palette.primary.box_shadow_client}`,
+        backgroundColor: "#fff",
+        boxShadow: theme => `3px 4px 3px #0000001c`,
         mx: "15px",
         px: "2em",
         textAlign: "center",
@@ -54,12 +54,12 @@ const styles = {
         bottom: "0",
         left: "50%",
         transform: "translate(-50%, 50%)",
-        backgroundColor: "primary.main",
+        backgroundColor: "red",
         color: "white",
         fontSize: "16px",
         fontWeight: 700,
         p: "12px 20px",
-        borderRadius: "15px"
+        borderRadius: "6px"
     },
     Navigation: {
         mt: "3em",

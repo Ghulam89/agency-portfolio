@@ -5,7 +5,7 @@ const styles = {
             m: "0 5px",
             "&.active": {
                 button: {
-                    color: "primary.main"
+                    color: "red"
                 }
             }
         }
@@ -15,7 +15,8 @@ const styles = {
         borderRadius: "5px",
         p: "5px 10px",
         fontWeight: 500,
-        transition: "0.2s ease"
+        transition: "0.2s ease",
+        color:'red'
     }
 };
 

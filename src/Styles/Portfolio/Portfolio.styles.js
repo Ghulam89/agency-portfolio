@@ -5,7 +5,7 @@ const styles = {
         position: "relative",
         "&:after": {
             content: '""',
-            background: theme => theme.palette.primary.WorkGradient,
+            // background: theme => '#f29696',
             width: "100%",
             height: "50em",
             padding: " ",

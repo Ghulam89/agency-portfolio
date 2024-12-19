@@ -10,7 +10,7 @@ const styles = {
         },
         zIndex: "999",
         "&.sticky": {
-            backgroundColor: "background.default",
+            backgroundColor: "red",
             boxShadow: theme => `0 0 20px ${theme.palette.primary.box_shadow_black}`
         }
     }

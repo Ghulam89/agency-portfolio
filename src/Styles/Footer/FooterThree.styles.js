@@ -10,7 +10,7 @@ const styles = {
         mb: "20px"
     },
     InputField: {
-        backgroundColor: "background.default",
+        backgroundColor: "#F5F5F5",
         border: theme => `1px solid ${theme.palette.primary.inputBorder}`,
         p: "6px 15px",
         borderRadius: "8px",

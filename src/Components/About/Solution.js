@@ -43,6 +43,29 @@ const styles = {
       backgroundColor: "#d32f2f",
     },
   },
+  SeeProjectBtn: {
+    backgroundColor: "red",
+    color: "background.default",
+    p: "12px 18px",
+    fontSize: "15px",
+    fontWeight: 500,
+    border: "1px solid transparent",
+    transition: "0.3s ease",
+    svg: {
+        fontSize: "18px",
+        ml: "8px",
+        mb: "-1px"
+    },
+    "&:hover": {
+        backgroundColor: "white",
+        color: "text.primary",
+        borderColor: "text.primary"
+    },
+    display: {
+        sm: "unset",
+        xxs: "none"
+    },
+},
 };
 
 const Solution = () => {
@@ -67,14 +90,26 @@ const Solution = () => {
                 <Typography variant="body2" component="p" sx={styles.description}>
                   {solution.description}
                 </Typography>
-                <Button variant="contained" sx={styles.button}>
+                {/* <Button variant="contained" sx={styles.button}>
                   CONTACT US
-                </Button>
+                </Button> */}
+                 <Link
+                href="#"
+                spy={true}
+                smooth={true}
+                duration={500}
+            >
+                  <ButtonBase sx={styles.SeeProjectBtn}>
+                  CONTACT US
+                  
+                </ButtonBase>
+            </Link>
                 </Box>
               </Box>
             </Grid>
           ))}
       </Grid>
+      <Box display={'flex'} justifyContent={'center'}  >
       <Link
                 href="#"
                 spy={true}
@@ -86,6 +121,7 @@ const Solution = () => {
                   
                 </ButtonBase>
             </Link>
+      </Box>
     </Box>
     </Container>
    

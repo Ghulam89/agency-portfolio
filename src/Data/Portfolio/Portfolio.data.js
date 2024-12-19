@@ -2,32 +2,32 @@
 const  PortfolioData =  [
     {
         name: "Graphics Design",
-        filter: "graphic",
+        filter: "app",
         image: 'avatars/portfolio/work1.png',
         url: "/"
     },
     {
         name: "Graphics Design",
-        filter: "graphic",
-        image: 'avatars/portfolio/work2.png',
+        filter: "app",
+        image: 'avatars/portfolio/work1.png',
         url: "/"
     },
     {
         name: "Web Development",
         filter: "web",
-        image: 'avatars/portfolio/work3.png',
+        image: 'avatars/portfolio/work1.png',
         url: "/"
     },
     {
         name: "Web Development",
         filter: "web",
-        image: 'avatars/portfolio/work4.png',
+        image: 'avatars/portfolio/work1.png',
         url: "/"
     },
     {
         name: "Web Development",
         filter: "web",
-        image: 'avatars/portfolio/work5.png',
+        image: 'avatars/portfolio/work1.png',
         url: "/"
     },
     {
@@ -39,13 +39,19 @@ const  PortfolioData =  [
     {
         name: "Web Development",
         filter: "web",
-        image: 'avatars/portfolio/work2.png',
+        image: 'avatars/portfolio/work1.png',
         url: "/"
     },
     {
-        name: "UI/UX",
-        filter: "ui",
-        image: 'avatars/portfolio/work5.png',
+        name: "Web Development",
+        filter: "web",
+        image: 'avatars/portfolio/work1.png',
+        url: "/"
+    },
+    {
+        name: "App Development",
+        filter: "app",
+        image: 'avatars/portfolio/work1.png',
         url: "/"
     }
 ]

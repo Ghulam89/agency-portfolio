@@ -15,13 +15,14 @@ import Navs from "@/Data/Header/Navs.data";
 
 //Styles
 import styles from "@/Styles/Header/Dialogs.styles";
+import Link from "next/link";
 
 const Drawers = ({ toggleDrawer }) => {
     return (
         <Box>
             <Stack direction="row" sx={{ alignItems: "center" }}>
                 <Box sx={{ flex: 1, mt: "5px" }}>
-                    <Image src={'/avatars/header/logo.png'} width={200} height={30} alt="Logo" />
+                    <Image src={'/avatars/header/logo.png'} width={200} height={100} alt="Logo" />
                 </Box>
                 <ButtonBase onClick={toggleDrawer(false)} sx={styles.CrossButton}>
                     <CloseRoundedIcon />
@@ -64,14 +65,14 @@ const Drawers = ({ toggleDrawer }) => {
                     <EmailIcon />
                 </Box>
                 <Box>
-                    {/* <Link href="mailto:info@codestation21.com">
+                    <Link href="mailto:info@codestation21.com">
                         <Link
                             href={'#'}>
                             <Typography variant="body1" component="p">
                                 info@codestation21.com
                             </Typography>
                         </Link>
-                    </Link> */}
+                    </Link>
                 </Box>
             </Stack>
             <Stack direction="row" sx={styles.Address}>
@@ -79,44 +80,44 @@ const Drawers = ({ toggleDrawer }) => {
                     <PhoneIcon />
                 </Box>
                 <Box>
-                    {/* <Link href="tel:+8801552938771">
+                    <Link href="tel:+8801552938771">
                         <Link href={'#'}>
                             <Typography variant="body1" component="p">
                                 +880 1552-938771
                             </Typography>
                         </Link>
-                    </Link> */}
+                    </Link>
                 </Box>
             </Stack>
             <Stack direction="row" sx={styles.Social}>
-                {/* <Link href="https://github.com/codestation21">
+                <Link href="https://github.com/codestation21">
                     <Link href={'#'} >
                         <ButtonBase>
                             <GitHubIcon />
                         </ButtonBase>
                     </Link>
-                </Link> */}
-                {/* <Link href="https://www.facebook.com/codestation21">
+                </Link>
+                <Link href="https://www.facebook.com/codestation21">
                     <Link href={'#'} >
                         <ButtonBase>
                             <FacebookIcon />
                         </ButtonBase>
                     </Link>
-                </Link> */}
-                {/* <Link href="https://twitter.com/codestation21">
+                </Link>
+                <Link href="https://twitter.com/codestation21">
                     <Link href={'#'} >
                         <ButtonBase>
                             <TwitterIcon />
                         </ButtonBase>
                     </Link>
-                </Link> */}
-                {/* <Link href="https://behance.com/codestation21">
+                </Link>
+                <Link href="https://behance.com/codestation21">
                     <Link href={'#'} >
                         <ButtonBase>
                             <BehaceIcon />
                         </ButtonBase>
                     </Link>
-                </Link> */}
+                </Link>
             </Stack>
         </Box >
     );

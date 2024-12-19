@@ -28,12 +28,13 @@ const index = () => {
       <Portfolio />
       
       <Skill />
-      <Features/>
+     
       <Award />
-      
+      <Features/>
       <Client />
       {/* <Blog /> */}
-      <Contact />
+      
+      {/* <Contact /> */}
       <Footer />
     </>
   );

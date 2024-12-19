@@ -1,6 +1,6 @@
 const styles = {
     SeeProjectBtn: {
-        backgroundColor: "primary.main",
+        backgroundColor: "red",
         color: "background.default",
         p: "12px 18px",
         fontSize: "15px",
@@ -13,7 +13,7 @@ const styles = {
             mb: "-1px"
         },
         "&:hover": {
-            backgroundColor: "transparent",
+            backgroundColor: "white",
             color: "text.primary",
             borderColor: "text.primary"
         },
@@ -30,7 +30,7 @@ const styles = {
             width: "25px",
             height: "3px",
             m: "6px 0",
-            backgroundColor: "text.primary",
+            backgroundColor: "red",
             transition: "0.4s ease",
             "&.ripple1": {
                 width: "20px",
@@ -42,7 +42,7 @@ const styles = {
         },
         "&.active, &:hover": {
             div: {
-                backgroundColor: "primary.main",
+                backgroundColor: "red",
                 "&.ripple1": {
                     width: "25px",
                 },

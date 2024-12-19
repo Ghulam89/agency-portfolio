@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 .swiper-pagination-bullet{
     width:30px !important;
     height: 30px !important;
@@ -9,3 +13,6 @@
     background-color: white !important;
 }
 
+a{
+    text-decoration: none !important;
+}

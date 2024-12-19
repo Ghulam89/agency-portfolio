@@ -1,10 +1,12 @@
 import React from "react";
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button, ButtonBase } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Link from "next/link";
+import styles from "@/Styles/Header/Bar.styles";
 
 const slides = [
   {
@@ -84,7 +86,7 @@ const Hero = () => {
                 <Typography
                   variant="h3"
                   component="h1"
-                  sx={{ fontWeight: "bold", color: "#ee3733" }} 
+                  sx={{ fontWeight: "bold", color: "red" }} 
                 >
                   {slide.title}
                 </Typography>
@@ -95,14 +97,26 @@ const Hero = () => {
                 >
                   {slide.description}
                 </Typography>
-                <Button
+                {/* <Button
                   variant="contained"
                   color="primary"
                   size="large"
                   sx={{ mt: 2, px: 4, py: 1 }}
                 >
                   Learn More
-                </Button>
+                </Button> */}
+
+                <Link
+                href="#"
+                // spy={true}
+                // smooth={true}
+                // duration={500}
+            >
+                  <ButtonBase sx={styles.SeeProjectBtn}>
+                   LEARN MORE
+                  
+                </ButtonBase>
+            </Link>
               </Box>
 
               </Box>

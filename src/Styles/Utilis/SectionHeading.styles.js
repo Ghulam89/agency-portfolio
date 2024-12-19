@@ -11,7 +11,7 @@ const styles = {
     Divider: {
         mx: "24%",
         borderWidth: "2px",
-        borderColor: "primary.main",
+        borderColor: "red",
         mt: "5px"
     }
 };

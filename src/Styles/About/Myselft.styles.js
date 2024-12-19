@@ -30,7 +30,7 @@ const styles = {
             width: "3px",
             top: "7px",
             bottom: "5px",
-            backgroundColor: "primary.main",
+            backgroundColor: "red",
             position: "absolute",
             left: "0"
         }

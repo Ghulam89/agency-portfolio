@@ -1,6 +1,6 @@
 const styles = {
     Divider: {
-        backgroundColor: "primary.divider",
+        backgroundColor: "red",
         mt: "2em"
     },
     Terms: {
@@ -36,9 +36,11 @@ const styles = {
     Copyright: {
         flex: 1,
         fontWeight: 500,
+        
         textAlign: {
-            sm: "unset",
-            xxs: "center"
+            // sm: "unset",
+            xs: "center",
+
         }
     }
 };

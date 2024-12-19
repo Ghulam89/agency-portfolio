@@ -1,7 +1,7 @@
 const styles = {
     Container: {
         py: "5em",
-        background: theme => theme.palette.primary.HeroGradient
+        background: theme => 'linear-gradient(to right, #FFF ,red)'
     }
 };
 
