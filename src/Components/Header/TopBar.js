@@ -1,11 +1,13 @@
-import { Box, ButtonBase, Container, Grid, List, ListItem, Typography } from '@mui/material'
+import { Box, ButtonBase, Container, Grid, List, ListItem, Stack, Typography } from '@mui/material'
 import React from 'react'
 import { HiOutlineMail } from "react-icons/hi";
 import { IoCall, IoLogoFacebook } from "react-icons/io5";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
 import styles from "@/Styles/Header/Bar.styles";
-import { FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { MapIcon, EmailIcon, PhoneIcon, FacebookIcon, TwitterIcon, BehaceIcon } from "@/Utilis/Icons";
+import GitHubIcon from '@mui/icons-material/GitHub';
 import Link from 'next/link';
+import { LinkedIn, LinkOutlined } from '@mui/icons-material';
 const TopBar = () => {
   return (
     <>
@@ -53,24 +55,62 @@ const TopBar = () => {
             borderRadius: 1,
             width:'100%'
         }}>
-            <List sx={{ display: 'flex',alignItems:'center',gap:'15px',justifyContent:'center'}}>
-             
-              <IoLogoFacebook size={20} />
-             
-             
-             
-              <FaTwitter size={20} />
-              
-         
-              
-              <FaLinkedin size={20}  />
-              <FaWhatsapp size={20}  />
+              <Stack direction="row" sx={{
+        // mt: "25px",
+        a: {
+            color: "red",
+            textDecoration: "none",
+            button: {
+                backgroundColor: "#F5F5F5",
+                m: "0 5px",
+                p: "14px",
+                borderRadius: "8px",
+                transition: "all 0.3s linear 0s",
+                svg: {
+                    fontSize: "16px",
+                    transition: "0.3s",
+                },
+                "&:hover": {
+                    backgroundColor: "red",
+                    svg: {
+                        color: "background.default",
+                        transform: "rotate(360deg)"
+                    }
+                }
+            }
+        }
+    }}>
+                <Link href="https://github.com/codestation21">
+                    <Link href={'#'} >
+                        <ButtonBase>
+                            <GitHubIcon />
+                        </ButtonBase>
+                    </Link>
+                 </Link> 
+             <Link href="https://www.facebook.com/codestation21">
+                    <Link href={'#'} >
+                        <ButtonBase>
+                            <FacebookIcon />
+                        </ButtonBase>
+                    </Link>
+                 </Link>  
+             <Link href="https://twitter.com/codestation21">
+                   <Link href={'#'} >
+                        <ButtonBase>
+                            <TwitterIcon />
+                        </ButtonBase>
+                    </Link>
+             </Link> 
+               <Link href="https://behance.com/codestation21"> 
+                    <Link href={'#'} >
+                        <ButtonBase>
+                            <LinkedIn />
+                        </ButtonBase>
+                    </Link> 
+                </Link> 
+            </Stack>
 
-         
-           
-       
-              
-            </List>
+            
             
             <Link
                 href="#"

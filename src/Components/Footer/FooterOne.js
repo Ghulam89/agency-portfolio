@@ -11,6 +11,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 //Styles
 import styles from "@/Styles/Footer/FooterOne.styles";
+import { LinkedIn } from "@mui/icons-material";
 
 const FooterOne = () => {
     return (
@@ -24,7 +25,7 @@ const FooterOne = () => {
                 </Box>
                 <Box>
                     <Typography variant="body1" component="p">
-                        171/5, Borhanpur Lane, 6 Hazaribagh Road, Dhaka 1211
+                    Gulberg 3 Lahore , Big City Plaza , Floor M1 Office no 82
                     </Typography>
                 </Box>
             </Stack>
@@ -36,7 +37,7 @@ const FooterOne = () => {
                     <Link href="mailto:info@codestation21.com">
                         <Link href={'#'}>
                             <Typography variant="body1" component="p">
-                                info@codestation21.com
+                                Nextwavestech@gmail.com
                             </Typography>
                         </Link> 
                      </Link> 
@@ -81,7 +82,7 @@ const FooterOne = () => {
                <Link href="https://behance.com/codestation21"> 
                     <Link href={'#'} >
                         <ButtonBase>
-                            <BehaceIcon />
+                            <LinkedIn />
                         </ButtonBase>
                     </Link> 
                 </Link> 

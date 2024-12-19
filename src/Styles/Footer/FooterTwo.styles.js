@@ -17,7 +17,7 @@ const styles = {
         },
         "&:hover": {
             "& p": {
-                color: "primary.main",
+                color: "red",
                 letterSpacing: "1.5px"
             }
         }

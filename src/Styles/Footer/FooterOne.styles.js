@@ -29,7 +29,7 @@ const styles = {
             color: "red",
             textDecoration: "none",
             button: {
-                backgroundColor: "primary.social_bg",
+                backgroundColor: "#F5F5F5",
                 m: "0 5px",
                 p: "14px",
                 borderRadius: "8px",
